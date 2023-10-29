@@ -12,7 +12,7 @@ import tubby from "./images/tubby.jpg";
 import duke from "./images/duke.jpg";
 import perry from "./images/perry.jpg";
 
-function App() {
+function App({dogs}) {
   return (
     <div className="App">
       <header className="App-header">
