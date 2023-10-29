@@ -5,6 +5,7 @@ import {
   Redirect
 } from 'react-router-dom';
 import DogList from './DogList';
+import FilterDogDetails from './FilterDogDetails';
 
 function Routes({dogs}) {
     return (
@@ -12,6 +13,9 @@ function Routes({dogs}) {
         <Route exact path="/dogs">
           <DogList dogs={dogs} />
         </Route>
+        <Route path="/dogs/:name">
+        <FilterDogDetails dogs={dogs} />
+      </Route>
         <Redirect to="/dogs" />
       </Switch>
     );
